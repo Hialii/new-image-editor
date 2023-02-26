@@ -15,34 +15,23 @@
          <div class="preview-img">
             <img src="assets/add-img.svg" alt="add-image">
          </div>
-         <h2 class="subtitle">Filters<ion-icon name="color-wand-outline"></ion-icon></h2>
          <div class="editor-painel">
-            <label class="filters">Filters</label>
-            <div class="options">
-               <div class="filter-section">
-                  <p class="filter-name">Brightness</p>
-                  <button id="brightness"><ion-icon name="sunny-outline"></ion-icon></button>
-               </div>
-               <div class="filter-section">
-                  <p class="filter-name">Saturation</p>
+            <div class="filter">
+               <label class="title">Filters<ion-icon name="color-wand-outline"></ion-icon></label>
+               <div class="options">
+                  <button id="brightness" class="active"><ion-icon name="sunny-outline"></ion-icon></button>
                   <button id="saturation"><ion-icon name="water-outline"></ion-icon></button>
-               </div>
-               <div class="filter-section">
-                  <p class="filter-name">Inversion</p>
                   <button id="inversion"><ion-icon name="invert-mode-outline"></ion-icon></button>
-               </div>
-               <div class="filter-section">
-                  <p class="filter-name">Grayscale</p>
                   <button id="grayscale"><ion-icon name="thermometer-outline"></ion-icon></button>
                </div>
+              <div class="slider">
+               <div class="filter-info">
+                  <p class="name">Saturation</p>
+                  <p class="value">100%</p>
+               </div>
+               <input type="range" value="100" min="0" max="100">
+              </div> 
             </div>
-           <div class="slider">
-            <div class="filter-info">
-               <p class="name">Saturation</p>
-               <p class="value">100%</p>
-            </div>
-            <input type="range" value="100" min="0" max="100">
-           </div> 
          </div>
          <div class="controls">
             <button class="reset-filter">Reset</button>
