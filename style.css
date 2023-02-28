@@ -23,6 +23,11 @@ body {
    color: #fff;
 }
 
+.container.disabled :where(.editor-painel, .reset-filter, .save-image){
+   opacity: 0.4;
+   pointer-events: none;
+}
+
 .container .wrapper {
    display: flex;
    margin: 20px 0;
@@ -50,14 +55,18 @@ body {
    object-fit: contain;
 }
 
+.editor-painel .filter .title {
+   font-size: 1.2rem;
+}
+
 .editor-painel .options{
    display: flex;
    justify-content: space-between;
 }
 
 .editor-painel button {
-   padding: .3rem;
-   height: 40px;
+   padding: .6rem;
+   height: 50px;
    min-width: 40px;
    margin: 8px 5px 8px 2px;
    font-size: 1.5rem;
@@ -102,7 +111,7 @@ body {
    height: 5px;
 }
 
-.editor-painel .controls {
+.controls {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -124,7 +133,7 @@ body {
 }
 
 .controls .choose-image {
-   background: #6c757d;
+   background: #298de5;
 }
 
 .controls .save-image {
@@ -152,8 +161,27 @@ body {
       width: 100%;
    }
 
-   .editor-painel button {
+
+   .editor-painel .options button {
       border-radius: 50px;
+      width: 60px ;
+      height: 60px;
+      padding: .9rem;
    }
   
+}
+
+@media screen and (max-width: 500px) {
+   .controls button {
+      width: 100%;
+      margin-bottom: 10px;
+   }
+
+   .controls .row {
+      width: 100%;
+   }
+
+   .controls .save-image {
+      margin-left: 1.5px;
+   }
 }
