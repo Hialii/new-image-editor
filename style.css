@@ -95,6 +95,12 @@ body {
    margin-top: 40px;
  }
 
+ .filter .options button span {
+   opacity: 0;
+   pointer-events: none;
+ }
+
+ 
 .filter .slider {
    margin-top: 30px;
 }
