@@ -9,24 +9,24 @@
    <script src="script.js" defer></script>
 </head>
 <body>
-   <main class="container">
-      <h1 class="title">Image Editor</h1>
+   <main class="container disabled">
+      <h1 class="title">Editor de imagem</h1>
       <section class="wrapper">
         <section class="preview-img">
             <img src="./assets/img.svg" alt="add-img">
          </section>
          <section class="editor-painel">
             <section class="filter">
-               <label class="title">Filters<ion-icon name="color-wand-outline"></ion-icon></label>
+               <label class="title">Filtros<ion-icon name="color-wand-outline"></ion-icon></label>
                <div class="options">
-                  <button id="brightness" class="active"><ion-icon name="sunny-outline"></ion-icon><span>Brightness</span></button>
-                  <button id="saturation"><ion-icon name="water-outline"></ion-icon><span>Saturation<span></span></span></button>
-                  <button id="inversion"><ion-icon name="invert-mode-outline"></ion-icon><span>Inversion</span></button>
+                  <button id="brightness" class="active"><ion-icon name="sunny-outline"></ion-icon><span>Brilho</span></button>
+                  <button id="saturation"><ion-icon name="water-outline"></ion-icon><span>Saturação<span></span></span></button>
+                  <button id="inversion"><ion-icon name="invert-mode-outline"></ion-icon><span>Inversão</span></button>
                   <button id="grayscale"><ion-icon name="thermometer-outline"></ion-icon><span>Grayscale</span></button>
                </div>
                <div class="slider">
                   <div class="filter-info">
-                     <p class="name">Brightness</p>
+                     <p class="name">Brilho</p>
                      <p class="value">100%</p>
                   </div>
                   <input type="range" value="100" min="0" max="200">
@@ -38,8 +38,8 @@
          <button class="reset-filter">Reset</button>
          <input type="file" class="file-input" accept="image/*" hidden>
          <div class="row">
-            <button class="choose-image">Choose</button>
-            <button class="save-image">Save</button>
+            <button class="choose-image">Adicionar</button>
+            <button class="save-image">Salvar</button>
          </div>
       </section>
    </main>
